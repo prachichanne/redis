@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <script>
+        window.onload = function(){
+        const button1 = document.getElementById('registerBtn');
+        const button2 = document.getElementById('loginBtn');
+
+        button1.addEventListener('click', function() {
+          window.location.href = 'register.html';
+        });
+          
+        button2.addEventListener('click', function() {
+            window.location.href = 'login.html';
+          });
+        }
+
+    </script>
+
+    <div class="heading">
+        <h1 style="color: rgb(22, 103, 202);">Register Here</h1>
+    </div>
+
+    <form id="myForm" action="http://localhost:5200/register" method="POST">
+        <table style="padding-left:30%" class="tableclass">
+            <div class="container2">
+
+                <tr>
+                    <td style="width:10%">
+                        <label for="email"><b>Email</b></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:10%">
+                        <label for="psw"><b>Password</b></label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:10%">
+                        <label for="fname"><b>Full Name</b></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Full Name" name="fname" id="fname" required> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone"><b>Phone</b></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Phone" name="phone" id="phone" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bio"><b>Bio</b></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter bio " name="bio" id="bio" required> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addr"><b>Address</b></label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Address" name="addr" id="addr" required> <br>
+                    </td>
+                </tr>
+            </div>
+        </table>
+        <div style="text-align: center;" class="submitbutton">
+            <button id="registerBtn" style="background-color: rgb(130, 130, 237);text-align:center"
+                type="submit">Register</button>
+            <button  id="loginBtn" style="background-color: rgb(130, 130, 237);text-align:center"
+                type="button">Login</button>
+
+        </div>
+    </form>
+<script src="app.js"></script>
+</body>
+
+</html>
