@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-signin-client_id" content="856024856826-2kkcd4gr392hojjclpgteel154f9tdd3.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <form id="myForm">
+        <h1 style="text-align: center;"> Login Here</h1>
+
+        <div style="text-align: center;" class="container">
+            <input type="text" placeholder="Enter Email" name="email" id="email" required> <br>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+
+            <span style="text-align: center;" class="index">
+                <button style="background-color: rgb(89, 89, 233);text-align:center;width:30%;color:white"
+                    type="button" onclick="signIn()">Sign In</button><br><br>
+                <!-- <button id="registerBtn" style="background-color: rgb(130, 130, 237);text-align:center"
+                    type="button">Sign In</button> -->
+               
+                <!-- <div class="g-signin2" data-onsuccess="onSignIn">
+                    <button style="background-color: rgb(89, 89, 233);text-align:center;width:30%;color:white;text-align: center;"
+                    type="button">Sign In with google</button><br><br>
+
+                </div> -->
+                New User ?? Click here to <a href="signup.html">SignUp</a>
+    
+            </span>
+            
+        </div>
+    </form>
+    <!--Add the Firebase and Cloud Firestore libraries to your app-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
